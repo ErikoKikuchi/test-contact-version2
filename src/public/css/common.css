@@ -1,0 +1,29 @@
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    position:relative;
+}
+
+
+.header__title {
+    color: rgb(104, 68, 39);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    font-family:Georgia;
+    margin:0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    flex:1;
+
+
+}
+.header-nav{
+    margin-left: auto;
+    padding: 0 20px;
+}
