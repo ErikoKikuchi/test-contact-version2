@@ -8,6 +8,7 @@ use App\Models\Category;
 
 class ContactFactory extends Factory
 {
+    protected $model=Contact::class;
     /**
      * Define the model's default state.
      *
@@ -20,7 +21,7 @@ class ContactFactory extends Factory
             'last_name' => $this->faker->lastName,
             'gender'=> $this->faker->numberBetween(1,3),
             'email'=> $this->faker->safeEmail(),
-            'tel'=> $this->faker->numerify('090########'),
+            'tel'=> $this->faker->phoneNumber(),
             'address' => $this->faker->address,
             'category_id'=>  Category::inRandomOrder()->first()->id,
             'detail'=> $this->faker->text(120),
