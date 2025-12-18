@@ -16,10 +16,12 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', [ContactController::class, 'show']);
+Route::get('/', [ContactController::class, 'show'])->name('contact');
 Route::post('/confirm', [ContactController::class, 'confirm']);
-Route::post('/thanks', [ContactController::class, 'store']);
+Route::get('/thanks', [ContactController::class, 'thanks'])->name('thanks');
+Route::post('/store', [ContactController::class, 'store'])->name('store');
 
 Route::middleware('auth')->group(function () {
     Route::get('/admin', [AdminController::class, 'index']);
+    Route::get('/search', [AdminController::class, 'search']);
 });

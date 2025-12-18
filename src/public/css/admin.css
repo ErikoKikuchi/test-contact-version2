@@ -1,0 +1,106 @@
+.header-nav__item {
+    border: 1px solid rgb(104, 68, 39);
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: rgb(241, 236, 230);
+}
+.header-nav__link--logout {
+    color: rgb(104, 68, 39);
+    text-decoration: none;
+    border: none;
+    background-color: rgb(241, 236, 230);
+}
+.admin-page {
+    justify-content: center;
+    min-height: 800px;
+    margin: 20px;
+}
+.admin-page__title {
+    padding: 10px;
+}
+.form__title {
+    color: rgb(104, 68, 39);
+    font-weight: bold;
+    text-align: center;
+    font-family: Georgia;
+}
+.search-form__group {
+    width: 100%;
+    margin: 20px auto;
+    gap: 20px;
+}
+.search-form {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.search-form__inner {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.search-form__input{
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid rgb(104, 68, 39);
+    border-radius: 5px;
+    height: 40px;
+    width:60%;
+}
+
+.search-form__select {
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid rgb(104, 68, 39);
+    border-radius: 5px;
+    height: 40px;
+    width:fit-content;
+}
+.search-form__button{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.search__button--submit {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    background-color: rgb(104, 68, 39);
+    border-radius: 5px;
+    justify-content: center;
+}
+.reset__button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    color: rgb(104, 68, 39);
+    text-decoration: none;
+    border: 1px solid rgb(104, 68, 39);
+    background-color: rgb(241, 236, 230);
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+}

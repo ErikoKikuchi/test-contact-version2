@@ -1,0 +1,132 @@
+.confirm-form {
+    margin: 20px 10px 10px;
+    padding: 10px;
+}
+.confirm-form__title {
+    margin: 10px;
+}
+.form__title {
+    color: rgb(104, 68, 39);
+    font-weight: bold;
+    text-align: center;
+    font-family: Georgia;
+}
+.confirm-form__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.confirm-form__group {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    border: 1px solid rgb(104, 68, 39);
+}
+.confirm-form__item{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(104, 68, 39);
+    color: white;
+    font-size: 18px;
+    border: 1px solid white;
+    margin: 0 auto;
+    padding-left: 20px;
+    min-height: 60px;
+}
+.confirm-form__name-wrapper,
+.confirm-form__gender-wrapper,
+.confirm-form__email-wrapper,
+.confirm-form__tel-wrapper,
+.confirm-form__address-wrapper,
+.confirm-form__building-wrapper,
+.confirm-form__category-wrapper,
+.confirm-form__detail-wrapper {
+    width: 70%;
+    display: flex;
+    gap: 10px;
+    color: rgb(104, 68, 39);
+    font-size: 18px;
+    align-items: center;
+    padding-left: 20px;
+}
+.confirm-form__name--input {
+    height: 40px;
+    border: none;
+    color: rgb(104, 68, 39);
+    font-size: 18px;
+    width: fit-content;
+    min-width: 3ch;
+    max-width: 15ch;
+}
+.confirm-form__gender--input {
+    height: 40px;
+    border: none;
+}
+.confirm-form__email--input {
+    height: 40px;
+    border: none;
+    color: rgb(104, 68, 39);
+    font-size: 18px;
+    width: 100%;
+}
+.confirm-form__tel--input {
+    height: 40px;
+    border: none;
+    color: rgb(104, 68, 39);
+    font-size: 18px;
+    width: fit-content;
+    min-width: 3ch;
+    max-width: 5ch;
+}
+.confirm-form__address--input {
+    height: 40px;
+    border: none;
+    color: rgb(104, 68, 39);
+    font-size: 18px;
+    width:100%;
+}
+.confirm-form__building--input {
+    height: 40px;
+    border: none;
+    color: rgb(104, 68, 39);
+    font-size: 18px;
+    width:100%;
+}
+.confirm-form__category--display {
+    height: 40px;
+    border: none;
+    width: fit-content;
+}
+.confirm-form__detail--input {
+    height: 100px;
+    border: none;
+    color: rgb(104, 68, 39);
+    font-size: 18px;
+    width: 100%;
+}
+.confirm-form__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+.confirm-form__button--submit {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(104, 68, 39);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.back-form__button{
+    color: rgb(104, 68, 39);
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid rgb(104, 68, 39);
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+}

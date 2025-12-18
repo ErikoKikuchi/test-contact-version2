@@ -21,7 +21,9 @@
         <form class="login-form__inner" action="/login" method="post">
             @csrf
             <div class="login-form__group">
-                <p class="login-form__item">メールアドレス</p>
+                <div class="login-form__label">
+                    <p class="login-form__item">メールアドレス</p>
+                </div>
                 <input class="login-form__email--input" type="text" name="email" placeholder="例：test@example.com" value="{{old('email')}}">
             </div>
             <div class="error">
@@ -30,7 +32,9 @@
                 @enderror
             </div>
             <div class="login-form__group">
-                <p class="login-form__item">パスワード</p>
+                <div class="login-form__label">
+                    <p class="login-form__item">パスワード</p>
+                </div>
                 <input class="login-form__password--input" type="text" name="password" placeholder="例：password">
             </div>
             <div class="error">

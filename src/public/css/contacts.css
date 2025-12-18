@@ -1,0 +1,121 @@
+.contact-form{
+    margin:20px 10px 10px;
+    padding:10px;
+}
+.contact-form__title{
+    margin: 10px;
+}
+.form__title{
+    color:rgb(104, 68, 39);
+    font-weight: bold;
+    text-align: center;
+    font-family:Georgia;
+}
+.contact-form__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-form__group{
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+}
+.contact-form__item-wrapper{
+    width:30%;
+    display: flex;
+    align-items: center;
+    color: rgb(104, 68, 39);
+    margin:0 auto;
+}
+.form-alert{
+    color:red;
+    margin-left:5px;
+}
+.contact-form__name-wrapper,
+.contact-form__gender-wrapper,
+.contact-form__email-wrapper,
+.contact-form__tel-wrapper,
+.contact-form__address-wrapper,
+.contact-form__building-wrapper,
+.contact-form__category-wrapper,
+.contact-form__detail-wrapper{
+    width:70%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    color: rgb(104, 68, 39);
+}
+.contact-form__name--input{
+    height:40px;
+    width:49%;
+    background-color: rgb(244, 244, 244);
+    border: 1px solid rgb(104, 68, 39);
+}
+.contact-form__gender--input{
+    margin-left:10px;;
+}
+input[type="radio"]:checked {
+    accent-color: rgb(104, 68, 39);
+}
+.contact-form__email--input{
+    height:40px;
+    width:100%;
+    background-color: rgb(244, 244, 244);
+    border: 1px solid rgb(104, 68, 39);
+}
+.contact-form__tel--input{
+    height:40px;
+    width:30%;
+    background-color: rgb(244, 244, 244);
+    border: 1px solid rgb(104, 68, 39);
+}
+.contact-form__address--input{
+    height:40px;
+    width:100%;
+    background-color: rgb(244, 244, 244);
+    border: 1px solid rgb(104, 68, 39);
+}
+.contact-form__building--input{
+    height:40px;
+    width:100%;
+    background-color: rgb(244, 244, 244);
+    border: 1px solid rgb(104, 68, 39);
+}
+.contact-form__category--select{
+    height:40px;
+    width:60%;
+    background-color: rgb(244, 244, 244);
+    border: 1px solid rgb(104, 68, 39);
+    color: rgb(104, 68, 39);
+}
+.contact-form__detail--textarea{
+    height:100px;
+    width:100%;
+    background-color: rgb(244, 244, 244);
+    border: 1px solid rgb(104, 68, 39);
+}
+.error{
+    margin-top:5px;
+    margin-left: 40%;
+}
+.error-messages{
+    color:red;
+    font-size: 14px;
+}
+.contact-form__button{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.contact-form__button--submit{
+    width:150px;
+    height:40px;
+    background-color: rgb(104, 68, 39);
+    color:white;
+    font-weight: bold;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
