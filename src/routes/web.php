@@ -24,4 +24,5 @@ Route::post('/store', [ContactController::class, 'store'])->name('store');
 Route::middleware('auth')->group(function () {
     Route::get('/admin', [AdminController::class, 'index']);
     Route::get('/search', [AdminController::class, 'search']);
+    Route::get('/admin/csv', [AdminController::class, 'exportCsv'])->name('admin.csv');
 });

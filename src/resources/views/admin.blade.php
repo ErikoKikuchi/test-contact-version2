@@ -46,7 +46,9 @@
         </form>
     </div>
     <div class="optional__group">
-        //CSV
+        <div class="csv-button">
+            <a class="csv-button__link" href="{{route('admin.csv' ,request()->query()) }}">エクスポート</a>
+        </div>
         <div class="pagination">
             @if($contacts->onFirstPage())
             <div class="previous">&lt;</div>
@@ -72,32 +74,32 @@
                 <div class="last">&gt;</div>
                 @endif
         </div>
-        <div class=" admin-page__content">
-            <table class="admin-table">
-                <thead>
-                    <tr class="admin-table__inner">
-                        <th class="admin-table__title">お名前</th>
-                        <th class="admin-table__title">性別</th>
-                        <th class="admin-table__title">メールアドレス</th>
-                        <th class="admin-table__title">お問い合わせの種類</th>
-                        <th class="admin-table__title"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach($contacts as $contact)
-                    <tr class="admin-table__row">
-
-                        <td class=" admin-table__item">{{$contact->last_name}}{{$contact->first_name}}</td>
-                        <td class=" admin-table__item">{{$contact->gender_text}}</td>
-                        <td class=" admin-table__item">{{$contact->email}}</td>
-                        <td class=" admin-table__item">{{$contact->category->content}}</td>
-                        <td>
-                            @livewire('modal', ['contactId' => $contact->id])
-                        </td>
-                    </tr>
-                    @endforeach
-                </tbody>
-            </table>
-        </div>
     </div>
-    @endsection
+    <div class=" admin-page__content">
+        <table class="admin-table">
+            <thead>
+                <tr class="admin-table__inner">
+                    <th class="admin-table__title">お名前</th>
+                    <th class="admin-table__title">性別</th>
+                    <th class="admin-table__title">メールアドレス</th>
+                    <th class="admin-table__title">お問い合わせの種類</th>
+                    <th class="admin-table__title"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($contacts as $contact)
+                <tr class="admin-table__row">
+                    <td class=" admin-table__item">{{$contact->last_name}}{{$contact->first_name}}</td>
+                    <td class=" admin-table__item">{{$contact->gender_text}}</td>
+                    <td class=" admin-table__item">{{$contact->email}}</td>
+                    <td class=" admin-table__item">{{$contact->category->content}}</td>
+                    <td>
+                        @livewire('modal', ['contactId' => $contact->id])
+                    </td>
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
+</div>
+@endsection

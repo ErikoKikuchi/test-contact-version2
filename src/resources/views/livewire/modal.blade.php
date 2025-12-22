@@ -14,7 +14,7 @@
                 </tr>
                 <tr class=" modal-table__row">
                     <th class=" modal-table__header">性別</th>
-                    <td class=" modal-table__item">{{ $selectedContact->gender }} </td>
+                    <td class=" modal-table__item">{{ $selectedContact->gender__text }} </td>
                 </tr>
                 <tr class=" modal-table__row">
                     <th class=" modal-table__header">メールアドレス</th>
