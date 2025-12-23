@@ -17,16 +17,16 @@
     align-items: center;
 }
 .contact-form__group{
-    display: flex;
+    display: grid;
+    grid-template-columns: 30% 70%;
     max-width: 800px;
     width: 100%;
 }
 .contact-form__item-wrapper{
-    width:30%;
+    grid-column: 1;
     display: flex;
     align-items: center;
     color: rgb(104, 68, 39);
-    margin:0 auto;
 }
 .form-alert{
     color:red;
@@ -40,10 +40,10 @@
 .contact-form__building-wrapper,
 .contact-form__category-wrapper,
 .contact-form__detail-wrapper{
-    width:70%;
+    grid-column: 2;
     display: flex;
-    gap: 10px;
     align-items: center;
+    gap: 10px;
     margin-top: 20px;
     color: rgb(104, 68, 39);
 }
@@ -97,8 +97,7 @@ input[type="radio"]:checked {
     border: 1px solid rgb(104, 68, 39);
 }
 .error{
-    margin-top:5px;
-    margin-left: 40%;
+    grid-column: 2;
 }
 .error-messages{
     color:red;

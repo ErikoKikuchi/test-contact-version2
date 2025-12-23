@@ -30,7 +30,7 @@ class ContactController extends Controller
 
         if ($action === 'save') {
             $saveData = $validated;
-            $saveData['tel'] = $saveData['tel1'] - $saveData['tel2'] - $saveData['tel3'];
+            $saveData['tel'] = $saveData['tel1'] . $saveData['tel2'] . $saveData['tel3'];
             unset($saveData['tel1'], $saveData['tel2'], $saveData['tel3']);
             Contact::create($saveData);
             return redirect()->route('thanks');
