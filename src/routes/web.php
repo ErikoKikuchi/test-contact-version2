@@ -20,9 +20,12 @@ Route::get('/', [ContactController::class, 'show'])->name('contact');
 Route::post('/confirm', [ContactController::class, 'confirm']);
 Route::get('/thanks', [ContactController::class, 'thanks'])->name('thanks');
 Route::post('/store', [ContactController::class, 'store'])->name('store');
+//->middleware('throttle:5,1');//１分間に５回まで
 
 Route::middleware('auth')->group(function () {
     Route::get('/admin', [AdminController::class, 'index']);
     Route::get('/search', [AdminController::class, 'search']);
     Route::get('/admin/csv', [AdminController::class, 'exportCsv'])->name('admin.csv');
+    Route::get('/admin/exports/{export}/download', [AdminController::class, 'download'])
+        ->name('exports.download');
 });

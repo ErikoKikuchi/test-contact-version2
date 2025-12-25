@@ -20,12 +20,12 @@ class ContactFactory extends Factory
             'first_name' => $this->faker->firstName,
             'last_name' => $this->faker->lastName,
             'gender'=> $this->faker->numberBetween(1,3),
-            'email'=> $this->faker->safeEmail(),
+            'email'=> $this->faker->safeEmail,
             'tel'=> $this->faker->phoneNumber(),
-            'address' => $this->faker->address,
+            'address' => $this->faker->address(),
             'category_id'=>  Category::inRandomOrder()->first()->id,
             'detail'=> $this->faker->text(120),
-            'created_at'=> $this->faker->date,
+            'created_at'=> now(),
 
         ];
     }

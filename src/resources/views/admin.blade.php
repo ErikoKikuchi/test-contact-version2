@@ -16,6 +16,18 @@
 @endsection
 
 @section('content')
+<div class="message">
+    @if(session('message'))
+    <p class="message__text">{{ session('message') }}</p>
+    @endif
+    @if ($exports->first()->status === 'pending')
+    <p class="message__text">生成中…</p>
+    @elseif ($exports->first()->status === 'completed')
+        <a href="{{ route('exports.download', $exports->first()->id) }}">
+            ダウンロード
+        </a>
+    @endif
+</div>
 <div class="admin-page">
     <div class="admin-page__title">
         <h2 class="form__title">Admin</h2>
